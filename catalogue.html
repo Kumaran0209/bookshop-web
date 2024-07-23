@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Engineering Book Catalogue</title>
+</head>
+<body>
+    <h2>Engineering Books</h2>
+    <p>List of Engineering books will be displayed here:</p>
+    <form method="post" action="cart.html">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Authors</th>
+                    <th>Publisher</th>
+                    <th>Rate</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- CSE Book -->
+                <tr>
+                    <td><img src="CSE.png" alt="Computer Science with Python" style="width:100px; height:auto;"></td>
+                    <td>COMPUTER SCIENCE WITH PYTHON</td>
+                    <td>Thomas H. Cormen</td>
+                    <td>Mahesh Verma</td>
+                    <td>$50</td>
+                    <td>
+                        <button type="submit" name="book" value="cse_book">Add to Cart</button>
+                    </td>
+                </tr>
+                <!-- ECE Book -->
+                <tr>
+                    <td><img src="ECE.jpg" alt="Electronics & Communication Engineering" style="width:100px; height:auto;"></td>
+                    <td>Electronics & Communication Engineering</td>
+                    <td>John Doe</td>
+                    <td>Arihant's</td>
+                    <td>$60</td>
+                    <td>
+                        <button type="submit" name="book" value="ece_book">Add to Cart</button>
+                    </td>
+                </tr>
+                <!-- EEE Book -->
+                <tr>
+                    <td><img src="EEE.jpg" alt="Electrical Engineering with EEE" style="width:100px; height:auto;"></td>
+                    <td>Electrical Engineering with EEE</td>
+                    <td>Alice Johnson</td>
+                    <td>Technical Publications</td>
+                    <td>$55</td>
+                    <td>
+                        <button type="submit" name="book" value="eee_book">Add to Cart</button>
+                    </td>
+                </tr>
+                <!-- MECH Book -->
+                <tr>
+                    <td><img src="mech.jpeg" alt="Mechanical Engineering for Competitions" style="width:100px; height:auto;"></td>
+                    <td>Mechanical Engineering for Competitions</td>
+                    <td>R.K. Jain</td>
+                    <td>KHANNA PUBLISHERS</td>
+                    <td>$65</td>
+                    <td>
+                        <button type="submit" name="book" value="mech_book">Add to Cart</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>

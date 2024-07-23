@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Shop Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .registration-container {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .registration-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .registration-container input[type="text"],
+        .registration-container input[type="email"],
+        .registration-container input[type="password"],
+        .registration-container input[type="tel"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .registration-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .registration-container button:hover {
+            background-color: #45a049;
+        }
+        .registration-container .login-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .registration-container .login-link a {
+            text-decoration: none;
+            color: #4CAF50;
+        }
+        .registration-container .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-container">
+        <h2>Register for Book Shop</h2>
+        <form action="register_action.php" method="post">
+            <input type="text" placeholder="Full Name" name="fullname" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="password" placeholder="Password" name="password" required>
+            <input type="tel" placeholder="Contact Number" name="contact" required>
+            <button type="submit">Register</button>
+        </form>
+        <div class="login-link">
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </div>
+</body>
+</html>

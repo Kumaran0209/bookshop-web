@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 150px;
+        }
+        .header span {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<frameset rows="20%,*">
+    <frame src="top.html" name="topFrame">
+    <frameset cols="20%,*">
+        <frame src="left.html" name="leftFrame">
+        <frame src="right.html" name="rightFrame">
+    </frameset>
+</frameset>
+<noframes>
+    <body>
+        <p>Your browser does not support frames.</p>
+    </body>
+</noframes>
+</html>
+
